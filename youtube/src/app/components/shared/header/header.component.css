@@ -1,0 +1,60 @@
+.header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+}
+
+mat-icon {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: relative;
+}
+
+.country-tag {
+    position: absolute;
+    top: -0.4rem;
+    right: -1rem;
+}
+
+.country-tag span {
+    font-size: 0.7rem;
+}
+
+.yt-icon img {
+    width: 2rem;
+}
+
+.yt-text h3 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.profile-menu-list {
+    display: none;
+}
+
+.profile-menu {
+    background-color: green;
+    margin: 0;
+    padding: 0;
+}
+
+.avatar-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: fit-content;
+    background-color: red;
+    margin: 0;
+    padding: 0;
+}
+
+.avatar-btn img {
+    width: 2rem;
+    height: 2rem;
+}
