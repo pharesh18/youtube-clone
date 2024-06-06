@@ -6,3 +6,38 @@
   box-sizing: border-box;
   font-family: Roboto, Arial, sans-serif;
 }
+
+.flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-start-between {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border1 {
+  border: 1px solid red;
+}
+
+html,
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* .flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */

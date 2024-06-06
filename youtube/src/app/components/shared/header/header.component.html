@@ -1,84 +1,100 @@
-<div class="header">
-  <div class="start">
+<div class="header flex-center-between">
+  <div class="start flex-center-between">
     <div class="menu-icon">
-      <mat-icon fontIcon="menu"></mat-icon>
+      <img src="assets/images/menu.png" alt>
     </div>
-    <div class="logo">
+    <div class="logo flex-center-between">
       <div class="yt-icon">
-        <img src="assets/images/youtube.png" alt>
+        <img src="assets/images/youtube.png" class="yt-icon-img" alt>
       </div>
       <div class="yt-text">
-        <h3>YOUTUBE</h3>
+        <img src="assets/images/youtube-text.png" class="yt-text-img" alt>
       </div>
       <div class="country-tag">
         <span>IN</span>
       </div>
     </div>
   </div>
+
+  <!-- header center part -->
   <div class="center">
-    <div class="search-bar">
-      <div class="search-icon">
+    <div class="search-bar flex-center-between">
+      <div class="search-focus flex-center-between">
+        <div class="search-icon flex-center">
+          <mat-icon fontIcon="search"></mat-icon>
+        </div>
+        <div class="search-input">
+          <input type="text" placeholder="Search">
+        </div>
+      </div>
+      <button type="button" class="search-btn ">
         <mat-icon fontIcon="search"></mat-icon>
-      </div>
-      <div class="search-input">
-        <input type="text">
-      </div>
-      <div class="search-btn">
-        <mat-icon fontIcon="search"></mat-icon>
-      </div>
+      </button>
     </div>
   </div>
   <div class="end">
     <div class="profile-menu">
-      <button type="button" class="avatar-btn">
-        <img src="assets/profile-image.jpg" alt>
+      <button type="button" (click)="ngToggleMenu()" class="avatar-btn">
+        <img src="assets/images/profile-image.jpg" alt>
       </button>
     </div>
   </div>
 
   <!-- profile menu  -->
-  <div class="profile-menu-list">
-    <div class="menu-list-row">
-      <div class="menu-list-item">
-        <div class="item-icon">
-          <div class="avatar-btn">
-            <img src="assets/images/profile-image.jpg" alt>
-          </div>
-        </div>
-        <div class="item-content">
-          <h5>Haresh Prajapati</h5>
-          <span>hp452444gmail.com</span>
-        </div>
+</div>
+
+@if(isMenuOpen){
+<div class="profile-menu-list">
+  <div class="menu-list-row">
+    <div class="menu-list-item">
+      <div class="item-icon">
+        <img src="assets/images/profile-image.jpg" class="profile-img" alt>
+      </div>
+      <div class="item-content">
+        <p>Haresh Prajapati</p>
+        <span>hp452444gmail.com</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-list-row">
+    <div class="menu-list-item">
+      <div class="item-icon">
+        <img src="assets/images/g.png" alt>
+      </div>
+      <div class="item-content">
+        <p>Google Account</p>
       </div>
     </div>
 
-    <div class="menu-list-row">
-      <div class="menu-list-item">
-        <div class="item-icon">
-          <mat-icon fontIcon="menu"></mat-icon>
-        </div>
-        <div class="item-content">
-          <h5>Google Account</h5>
-        </div>
+    <div class="menu-list-item">
+      <div class="item-icon">
+        <img src="assets/images/switch-account.png" alt>
       </div>
-
-      <div class="menu-list-item">
-        <div class="item-icon">
-          <mat-icon fontIcon="menu"></mat-icon>
-        </div>
-        <div class="item-content">
-          <h5>Switch Account</h5>
-        </div>
+      <div class="item-content">
+        <p>Switch Account</p>
       </div>
+    </div>
 
-      <div class="menu-list-item">
-        <div class="item-icon">
-          <mat-icon fontIcon="menu"></mat-icon>
-        </div>
-        <div class="item-content">
-          <h5>Sign out</h5>
-        </div>
+    <div class="menu-list-item">
+      <div class="item-icon">
+        <img src="assets/images/logout.png" alt>
+      </div>
+      <div class="item-content">
+        <p>Sign out</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="menu-list-row">
+    <div class="menu-list-item">
+      <div class="item-icon">
+        <img src="assets/images/settings.png" alt>
+      </div>
+      <div class="item-content">
+        <p>Settings</p>
       </div>
     </div>
   </div>
 </div>
+}

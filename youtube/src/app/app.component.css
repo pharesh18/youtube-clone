@@ -1,0 +1,14 @@
+.app {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: bisque;
+}
+
+.main {
+  position: absolute;
+  left: 250px;
+  top: 60px;
+  width: calc(100% - 250px);
+  padding: 1rem;
+}

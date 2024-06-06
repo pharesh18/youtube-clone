@@ -1,0 +1,65 @@
+.sidebar {
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  top: 60px;
+  width: 250px;
+  padding: 10px;
+}
+
+.sidenav-container {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin: 0.2rem 0;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.6rem;
+}
+
+.nav:hover {
+  background-color: #e9e9e9;
+}
+
+.nav img {
+  width: 1.7rem;
+  margin-right: 1rem;
+}
+
+.nav p {
+  margin: 0;
+}
+
+/* terms style */
+
+.terms p {
+  font-size: 0.8rem;
+  color: #0f0e0efa;
+  font-weight: 500;
+}
+
+.terms span {
+  color: red;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1efef;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a4a3a3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #606060;
+}

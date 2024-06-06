@@ -1,11 +1,18 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatIconModule],
+  imports: [MatIconModule, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  isMenuOpen: boolean = false;
+  ngToggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+    console.log(this.isMenuOpen);
+  }
+}
