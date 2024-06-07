@@ -15,4 +15,22 @@ export class HeaderComponent {
     this.isMenuOpen = !this.isMenuOpen;
     console.log(this.isMenuOpen);
   }
+
+  ngInputFocus() {
+    const eleFocus = document.getElementById('search-focus');
+    const eleIcon = document.getElementById('search-icon');
+    if (eleFocus && eleIcon) {
+      eleFocus.style.border = '1px solid blue';
+      eleIcon.style.display = 'flex';
+    }
+  }
+
+  ngInputBlur() {
+    const eleFocus = document.getElementById('search-focus');
+    const eleIcon = document.getElementById('search-icon');
+    if (eleFocus && eleIcon) {
+      eleFocus.style.border = 'none';
+      eleIcon.style.display = 'none';
+    }
+  }
 }

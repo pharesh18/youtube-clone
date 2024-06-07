@@ -1,0 +1,108 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0.6rem;
+  transition: 0.4s ease-out;
+  border-radius: 1rem;
+}
+
+.card:hover {
+  background-color: #f0f0f0f9;
+}
+
+.card:hover .thumbnail img {
+  border-radius: 0;
+}
+
+.thumbnail {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 10rem;
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+}
+
+.thumbnail .timer {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.8rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.3rem;
+  font-size: 0.7rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/* details */
+.details {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.avatar-btn {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.avatar-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+.summary {
+  width: calc(100% - 4.5rem);
+}
+
+.summary .title {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.4rem;
+  font-weight: 500;
+}
+
+.summary .uploader {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  color: #646363;
+}
+
+.other-summary {
+  display: flex;
+  align-items: center;
+}
+
+.other-summary .views,
+.other-summary .time {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  color: #646363;
+}
+
+.other-summary .devider-point {
+  width: 0.2rem;
+  height: 0.2rem;
+  background-color: #666464;
+  border-radius: 100%;
+  margin: 0 0.4rem;
+}
+
+.actions-btn {
+  width: 2rem;
+  height: 1.8rem;
+  border-radius: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.actions-btn img {
+  width: 100%;
+  height: 100%;
+}

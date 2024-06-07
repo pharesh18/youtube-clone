@@ -19,12 +19,13 @@
   <!-- header center part -->
   <div class="center">
     <div class="search-bar flex-center-between">
-      <div class="search-focus flex-center-between">
-        <div class="search-icon flex-center">
+      <div id="search-focus" class="search-focus flex-center-between">
+        <div id="search-icon" class="search-icon flex-center">
           <mat-icon fontIcon="search"></mat-icon>
         </div>
         <div class="search-input">
-          <input type="text" placeholder="Search">
+          <input type="text" placeholder="Search" (blur)="ngInputBlur()"
+            (focus)="ngInputFocus()">
         </div>
       </div>
       <button type="button" class="search-btn ">

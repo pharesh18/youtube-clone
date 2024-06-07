@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="thumbnail">
+    <img [src]="data.imgUrl" alt>
+    <div class="timer">
+      <span>{{data.time}}</span>
+    </div>
+  </div>
+  <div class="details">
+    <a class="avatar-btn">
+      <img src="assets/images/profile-image.jpg" alt>
+    </a>
+    <div class="summary">
+      <h3 class="title">
+        {{data.title}}
+      </h3>
+      <p class="uploader">
+        T-Series
+      </p>
+      <div class="other-summary">
+        <p class="views">
+          {{data.views}} Views
+        </p>
+        <div class="devider-point"></div>
+        <p class="time">
+          {{data.timestamp}}
+        </p>
+      </div>
+    </div>
+    <div class="actions-btn">
+      <img src="assets/images/three-dots.png" alt>
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 .sidebar {
-  height: 100%;
+  height: calc(100% - 60px);
   position: fixed;
   overflow: auto;
   top: 60px;
@@ -10,6 +10,13 @@
 .sidenav-container {
   border-bottom: 1px solid #ddd;
   margin-bottom: 1rem;
+}
+
+.sidenav-container .title {
+  padding: 0 0 0 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
 }
 
 .nav {
@@ -31,6 +38,8 @@
 
 .nav p {
   margin: 0;
+  font-size: 0.9rem;
+  /* color: rgb(0, 0, 0, 0.9); */
 }
 
 /* terms style */
@@ -42,12 +51,23 @@
 }
 
 .terms span {
-  color: red;
+  text-align: center;
+  color: #7a7777;
+  font-size: 0.8rem;
+}
+
+.sidenav-container:last-child {
+  border-bottom: none;
 }
 
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  display: none;
+}
+
+.sidebar ::-webkit-scrollbar {
+  display: block;
 }
 
 /* Track */

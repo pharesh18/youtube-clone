@@ -9,7 +9,6 @@
   overflow: hidden;
   z-index: 1;
   background-color: #fff;
-  border-bottom: 1px solid #ddd;
 }
 
 .menu-icon {
@@ -106,14 +105,6 @@
   padding: 0.2rem 0.4rem 0.2rem 0rem;
 }
 
-.search-input input:focus + .search-focus {
-  border: 1px solid blue;
-}
-
-.search-input input:focus + .search-icon {
-  display: flex;
-}
-
 .search-btn {
   border: none;
   outline: none;
@@ -152,6 +143,8 @@
   box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   padding: 0.4rem 0 0 0;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .menu-list-row {
@@ -174,7 +167,7 @@
 }
 
 .menu-list-item:hover {
-  background-color: #ddd !important;
+  background-color: #ddd;
 }
 
 .item-icon {
